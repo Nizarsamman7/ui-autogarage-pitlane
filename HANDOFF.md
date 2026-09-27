@@ -1,7 +1,9 @@
 # Handoff
 
-Status: autogarage UI template (Pitlane).
+Status: full multi-page Pitlane Service template. 14 routes. Pushed from the starter-template batch.
 
-Routes: / and /services. No payments or stock system.
+Stack: Next.js 15, React 19, CSS in app/globals.css. Shared chrome in components/SiteChrome.tsx.
 
-Next: replace service names, hours, and address.
+Forms stay in the browser. No payments, auth, or database.
+
+Next: npm install && npm run dev. Edit copy per page under app/.

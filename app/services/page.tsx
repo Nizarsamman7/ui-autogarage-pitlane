@@ -1,30 +1,18 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { InquiryForm } from "@/components/InquiryForm";
-
 export const metadata: Metadata = { title: "Book a bay" };
 
-export default function ServicesPage() {
+export default function Page() {
   return (
-    <>
-      <div className="strip" />
-      <header className="nav">
-        <Link className="logo" href="/">Pitlane</Link>
-        <nav><Link href="/">Floor</Link></nav>
-      </header>
-      <section className="pad">
-        <h1>Book a bay</h1>
-        <InquiryForm
-          submitLabel="Request the bay"
-          fields={[
-            { name: "name", label: "Name" },
-            { name: "phone", label: "Phone", type: "tel" },
-            { name: "plate", label: "Licence plate" },
-            { name: "job", label: "Job", type: "select", options: ["Inspection", "Maintenance", "Tyres", "Diagnostics"] },
-            { name: "note", label: "Notes", type: "textarea" },
-          ]}
-        />
-      </section>
-    </>
+    <article className="sheet">
+      <p className="eyebrow">{"Appointment"}</p>
+      <h1>{"Tell us the job and the plate."}</h1>
+      <p className="lede">{"We call back the same working day. The form does not take payment."}</p>
+      
+      
+      
+      
+      <InquiryForm submitLabel={"Request the bay"} fields={[{"name":"name","label":"Name"},{"name":"phone","label":"Phone","type":"tel"},{"name":"plate","label":"Licence plate"},{"name":"job","label":"Job","type":"select","options":["Inspection","Maintenance","Tyres","Diagnostics"]},{"name":"note","label":"Notes","type":"textarea"}]} />
+    </article>
   );
 }

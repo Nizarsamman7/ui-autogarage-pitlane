@@ -10,15 +10,6 @@ const bays = [
 export default function HomePage() {
   return (
     <>
-      <div className="strip" />
-      <div className="top"><span>Bays open 08:00–17:30</span><span>Industrieweg 12</span></div>
-      <header className="nav">
-        <Link className="logo" href="/">Pitlane</Link>
-        <nav>
-          <a href="#bays">Bays</a>
-          <Link href="/services">Book a bay</Link>
-        </nav>
-      </header>
       <section className="hero">
         <h1>Service.<br />Not a showroom.</h1>
         <div className="plate">Independent garage<br />APK · Tyres · Maintenance</div>
