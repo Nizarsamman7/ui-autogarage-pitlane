@@ -1,0 +1,21 @@
+* { box-sizing: border-box; }
+body { margin: 0; background: #121417; color: #e8edf2; font-family: var(--font-body), sans-serif; }
+a { color: inherit; text-decoration: none; }
+.strip { background: repeating-linear-gradient(-45deg, #e10600, #e10600 12px, #1a1c1f 12px, #1a1c1f 24px); height: 10px; }
+.top { display: flex; justify-content: space-between; padding: 0.8rem 1.2rem; background: #e10600; color: white; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.08em; }
+.nav { display: flex; justify-content: space-between; align-items: center; padding: 1rem 1.2rem; border-bottom: 1px solid #2a2e33; }
+.logo { font-family: var(--font-display), sans-serif; font-size: 2rem; letter-spacing: 0.06em; text-transform: uppercase; }
+.nav nav { display: flex; gap: 1rem; text-transform: uppercase; font-size: 0.85rem; }
+.hero { padding: 3rem 1.2rem; display: grid; grid-template-columns: 1.3fr 0.7fr; gap: 1rem; }
+.hero h1 { font-family: var(--font-display), sans-serif; font-size: clamp(4rem, 10vw, 7rem); line-height: 0.85; margin: 0; text-transform: uppercase; }
+.plate { border: 3px solid #e8edf2; background: #f4f7fa; color: #121417; padding: 1rem; font-family: var(--font-display), sans-serif; letter-spacing: 0.12em; text-transform: uppercase; align-self: end; }
+.bays { padding: 0 1.2rem 2rem; }
+.bay { display: grid; grid-template-columns: 90px 1fr auto; gap: 1rem; align-items: center; border-top: 1px solid #2a2e33; padding: 1rem 0; }
+.code { font-family: var(--font-display), sans-serif; font-size: 2rem; color: #e10600; }
+.pad { padding: 2rem 1.2rem 3rem; max-width: 720px; }
+.inquiry-form { display: grid; gap: 0.75rem; }
+label { display: grid; gap: 0.3rem; text-transform: uppercase; font-size: 0.75rem; letter-spacing: 0.08em; }
+input, select, textarea { font: inherit; background: #1b1e22; color: white; border: 1px solid #2a2e33; padding: 0.75rem; }
+button { font: inherit; text-transform: uppercase; letter-spacing: 0.08em; background: #e10600; color: white; border: 0; padding: 0.9rem; cursor: pointer; }
+.form-success { border: 1px solid #e10600; padding: 1rem; }
+@media (max-width: 800px) { .hero, .bay { grid-template-columns: 1fr; } }
